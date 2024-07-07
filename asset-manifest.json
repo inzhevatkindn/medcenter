@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/medcenter/static/css/main.f855e6bc.css",
+    "main.js": "/medcenter/static/js/main.cd50baa9.js",
+    "static/js/453.a6a49d37.chunk.js": "/medcenter/static/js/453.a6a49d37.chunk.js",
+    "index.html": "/medcenter/index.html",
+    "main.f855e6bc.css.map": "/medcenter/static/css/main.f855e6bc.css.map",
+    "main.cd50baa9.js.map": "/medcenter/static/js/main.cd50baa9.js.map",
+    "453.a6a49d37.chunk.js.map": "/medcenter/static/js/453.a6a49d37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.cd50baa9.js"
+  ]
+}
