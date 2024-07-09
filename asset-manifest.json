@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/medcenter/static/css/main.4506ca25.css",
-    "main.js": "/medcenter/static/js/main.c90a6f32.js",
+    "main.css": "/medcenter/static/css/main.d6e9cc85.css",
+    "main.js": "/medcenter/static/js/main.019a4ff0.js",
     "static/js/510.ee197b32.chunk.js": "/medcenter/static/js/510.ee197b32.chunk.js",
+    "static/media/personal_bg.png": "/medcenter/static/media/personal_bg.dd239f469bbeb9a6f276.png",
+    "static/media/about_bg.png": "/medcenter/static/media/about_bg.1945cc1465a286c8f0c9.png",
     "static/media/help.png": "/medcenter/static/media/help.8b1189dfa6bff0b5d3bb.png",
+    "static/media/3.png": "/medcenter/static/media/3.8d3a4a8c298568d265fb.png",
+    "static/media/resources.png": "/medcenter/static/media/resources.1089e81743fa900bce6b.png",
     "static/media/doctor.png": "/medcenter/static/media/doctor.493b8f4c317c672d0c08.png",
+    "static/media/2.png": "/medcenter/static/media/2.b2cb3cf0a5766e647fe5.png",
+    "static/media/1.png": "/medcenter/static/media/1.f701b41a2cf367454117.png",
+    "static/media/doctor_card.png": "/medcenter/static/media/doctor_card.5eab7c5b8cd84072e9db.png",
     "static/media/slick.svg": "/medcenter/static/media/slick.cfaa1daba3c72d41e23f.svg",
     "static/media/slick.eot": "/medcenter/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/medcenter/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/medcenter/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/medcenter/index.html",
-    "main.4506ca25.css.map": "/medcenter/static/css/main.4506ca25.css.map",
-    "main.c90a6f32.js.map": "/medcenter/static/js/main.c90a6f32.js.map",
+    "main.d6e9cc85.css.map": "/medcenter/static/css/main.d6e9cc85.css.map",
+    "main.019a4ff0.js.map": "/medcenter/static/js/main.019a4ff0.js.map",
     "510.ee197b32.chunk.js.map": "/medcenter/static/js/510.ee197b32.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4506ca25.css",
-    "static/js/main.c90a6f32.js"
+    "static/css/main.d6e9cc85.css",
+    "static/js/main.019a4ff0.js"
   ]
 }
