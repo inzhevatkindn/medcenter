@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 195px 0 94px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background-color: #f9fef0;
+  border-radius: 24px;
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 800;
+  }
+
+  .right_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

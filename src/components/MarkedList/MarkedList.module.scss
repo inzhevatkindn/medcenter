@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+@import "../../styles/media";
+
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background: #d9d9d9;
+  }
+
+  .timeline_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 32px;
+
+    .timeline_dot {
+      position: relative;
+      width: 12px;
+      height: 12px;
+      background-color: $primary-color;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      margin-right: 10px;
+      box-shadow: 0 0 0 1px $primary-color;
+    }
+
+    .timeline_content {
+      width: calc(100% - 38px); // Учитываем ширину точки и маргин
+      color: $dark-gray;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &:last-child .timeline_dot::after {
+      display: none;
+    }
+  }
+}

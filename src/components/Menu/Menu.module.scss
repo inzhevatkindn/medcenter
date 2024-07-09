@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.dropdown {
+  position: relative;
+
+  .dropdownButton {
+    background: none;
+    border: none;
+    color: #1d1d1d;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .arrow {
+      margin-left: 5px;
+    }
+  }
+
+  .dropdownMenu {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    background-color: $white;
+    border: 1px solid $light-gray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    z-index: 1000;
+
+    .dropdownItem {
+      padding: 16px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $dark-gray;
+      width: 100%;
+      box-sizing: border-box;
+      text-transform: none;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+  }
+}

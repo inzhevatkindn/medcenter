@@ -1,0 +1,76 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/media";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 24px;
+  padding-bottom: 267px;
+
+  .left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    color: #3f3f3f;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+
+  .note {
+    color: #1d1d1d;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  .name {
+    color: #1d1d1d;
+    font-size: 39px;
+    line-height: 46px;
+    font-weight: 800;
+    margin-bottom: 32px;
+  }
+
+  .img_container {
+    z-index: 1;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .green_bg {
+    background-color: $primary-color;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 243px;
+    right: 39px;
+    width: 636px;
+    height: 527px;
+  }
+}
+
+.green_point {
+  width: 13px;
+  height: 13px;
+  background-color: $primary-color;
+  border-radius: 13px;
+  margin-right: 8px;
+}
+
+.list_title {
+  font-size: 20px;
+  line-height: 24px;
+}

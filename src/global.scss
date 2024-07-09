@@ -1,0 +1,40 @@
+@import "./styles/variables";
+
+header {
+  color: #1d1d1d;
+}
+
+a {
+  font-size: 20px;
+  color: #1d1d1d;
+  line-height: 20px;
+  font-weight: 400;
+
+  &[href^="mailto:"] {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hr_pd {
+  padding-left: 64px !important;
+  padding-right: 64px !important;
+}
+
+.col_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

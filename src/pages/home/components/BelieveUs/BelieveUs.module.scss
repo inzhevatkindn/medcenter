@@ -1,0 +1,62 @@
+@import "../../../../styles/variables";
+
+.container {
+  padding-bottom: 94px;
+
+  .divider {
+    height: 6px;
+    background-color: $primary-color;
+    width: 488px;
+    margin: -36px auto 24px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  .about {
+    margin-bottom: 36px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    color: $darker-gray;
+    padding: 0 200px;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* Расстояние между элементами */
+    justify-content: space-between; /* Равномерное распределение элементов по ширине контейнера */
+    // padding: 10px;
+
+    .flex_item {
+      flex: 1 1 calc(33.333% - 48px); /* Ширина каждого элемента с учетом gap */
+      display: flex;
+      justify-content: center;
+      border-radius: 12px;
+      padding: 20px;
+      background-color: #fff;
+      box-sizing: border-box;
+
+      .title {
+        margin: 20px 0 16px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+
+      .description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 35px;
+        color: $darker-gray;
+      }
+    }
+  }
+}

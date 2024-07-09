@@ -1,0 +1,15 @@
+// src/styles/_media.scss
+
+// Медиазапрос для десктопов
+@mixin desktop {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+// Медиазапрос для мобильных устройств
+@mixin mobile {
+  @media (max-width: 360px) {
+    @content;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/media";
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+
+  .title {
+    color: $primary-color;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 800;
+    margin-top: 13px;
+    margin-bottom: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}

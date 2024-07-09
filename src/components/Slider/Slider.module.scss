@@ -1,0 +1,139 @@
+@import "../../styles/variables";
+
+.newsSlider {
+  width: 100%;
+  position: relative;
+
+  .block {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 100%;
+    padding: 108px 0 33px;
+    box-sizing: border-box;
+  }
+
+  .left_block {
+    left: -25px;
+    width: 100px;
+    height: 100%;
+  }
+
+  .right_block {
+    right: -25px;
+    width: 100px;
+    height: 100%;
+  }
+
+  .green {
+    background-color: $primary-color;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+  h2 {
+    line-height: 39px;
+    font-size: 39px;
+    font-weight: 800;
+    margin-bottom: 36px;
+    margin-top: 0;
+  }
+
+  .slide_container {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .newsCard {
+      border-radius: 12px;
+      overflow: hidden;
+      // width: calc((100% / 3) - 48px);
+      width: calc(100% - 24px);
+      // width:
+      // margin-right: 24px;
+      background-color: #fff;
+      box-sizing: border-box;
+
+      .newsImage {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .newsContent {
+        padding: 20px;
+
+        .newsTitle {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 700;
+          margin-bottom: 16px;
+        }
+
+        .newsDescription {
+          font-size: 16px;
+          color: #666;
+          font-weight: 400;
+        }
+
+        .divider {
+          background-color: $dark-gray;
+          height: 1px;
+          width: 100%;
+          margin: 20px 0;
+        }
+
+        .newsFooter {
+          display: flex;
+          justify-content: space-between;
+
+          .newsLink {
+            font-size: 16px;
+            color: #1d1d1d;
+            // text-decoration: none;
+          }
+
+          .newsDate {
+            font-size: 16px;
+            color: #1d1d1d;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next_arrow {
+  top: -78px;
+  right: 0; /* Можете настроить по вашему усмотрению */
+  background-color: #fff;
+  background-color: $primary-color;
+  border: 1px $primary-color solid;
+}
+
+.prev_arrow {
+  top: -78px;
+  right: 56px; /* Можете настроить по вашему усмотрению */
+  background-color: #fff;
+  border: 1px $dark-gray solid;
+}

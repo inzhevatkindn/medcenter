@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+@import "../../styles/media";
+
+.button {
+  padding: 16px 40px;
+  font-size: 20px;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 100px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.default {
+  color: #5b5b5b;
+  border-color: #5b5b5b;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  box-shadow: 0 0 14px #a6db4b80;
+  border-width: 0;
+  color: #fff;
+}
+
+.black {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.green {
+  background-color: $primary-color;
+  box-shadow: 0 0 14px $primary-color;
+  color: #fff;
+}

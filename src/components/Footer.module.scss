@@ -1,0 +1,116 @@
+@import "../styles/variables";
+@import "../styles/media";
+
+.footer {
+  bottom: 0;
+  background-color: #1d1d1d;
+  color: $white;
+  padding: 35px 0;
+
+  a {
+    color: #fff;
+  }
+
+  .wrapper {
+    gap: 40px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 18px;
+      line-height: 23px;
+      font-weight: 700;
+      text-align: left;
+
+      div {
+        width: 60px;
+        height: 60px;
+
+        div {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      display: flex;
+    }
+  }
+
+  .links {
+    gap: 24px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .contacts {
+    gap: 14px;
+
+    svg {
+      flex-shrink: 0;
+      margin-right: 8px;
+      display: flex;
+      width: 24px;
+    }
+
+    a {
+      flex: 1;
+      display: flex;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    div {
+      font-size: 16px;
+      white-space: nowrap;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Расстояние между элементами */
+    justify-content: space-between; /* Равномерное распределение элементов по ширине контейнера */
+    width: 80px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-color: #fff;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      flex: 1 1 calc(50% - 32px); /* Ширина каждого элемента с учетом gap */
+    }
+  }
+}
+
+.gap50 {
+  gap: 50px;
+}

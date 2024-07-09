@@ -1,0 +1,123 @@
+@import "../styles/variables";
+@import "../styles/media";
+
+.header {
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    // padding-bottom: 12px;
+    background-color: $white;
+
+    .contactInfo {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+
+      // span {
+      //   display: flex;
+      //   align-items: center;
+      // }
+      a {
+        margin-right: 26px;
+      }
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .bg {
+    background-color: $primary-color;
+  }
+
+  .bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      .navList {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        align-items: center;
+
+        li {
+          position: relative;
+          cursor: pointer;
+          font-size: 20px;
+
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            line-height: 20px;
+            font-weight: 400;
+            color: #1d1d1d;
+            text-transform: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .appointmentButton {
+      padding: 16px 40px;
+      background-color: $primary-color;
+      font-size: 20px;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      border: 1px #1d1d1d solid;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
