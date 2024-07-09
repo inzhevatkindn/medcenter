@@ -3,17 +3,19 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 import styles from "./App.module.scss";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/medcenter">
       <div className="App">
         <Header />
         <div className={styles.gradient}>
           <div className="container">
             <Routes>
-              <Route exact path="/medcenter" element={<Home />} />
+              <Route exact path="/" element={<Home />} />
+              <Route path="about" element={<About />} />
             </Routes>
           </div>
         </div>

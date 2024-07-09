@@ -56,7 +56,7 @@ function Header() {
             <nav className={styles.nav}>
               <ul className={styles.navList}>
                 <li>
-                  <a href="/about">О центре</a>
+                  <a href="/medcenter/about">О центре</a>
                 </li>
                 <li>
                   <Menu title="Пациенту" items={patientMenuItems} />
