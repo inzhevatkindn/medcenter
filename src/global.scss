@@ -4,6 +4,10 @@ header {
   color: #1d1d1d;
 }
 
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
 a {
   font-size: 20px;
   color: #1d1d1d;
@@ -37,4 +41,14 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.right_green_square {
+  background-color: $primary-color;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 24px;
+  right: -25px;
+  width: 100px;
+  height: calc(100% - 48px);
 }
