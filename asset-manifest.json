@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/medcenter/static/css/main.ce46158a.css",
-    "main.js": "/medcenter/static/js/main.ab1b4837.js",
+    "main.css": "/medcenter/static/css/main.4506ca25.css",
+    "main.js": "/medcenter/static/js/main.397bfb6b.js",
     "static/js/510.ee197b32.chunk.js": "/medcenter/static/js/510.ee197b32.chunk.js",
     "static/media/help.png": "/medcenter/static/media/help.8b1189dfa6bff0b5d3bb.png",
     "static/media/doctor.png": "/medcenter/static/media/doctor.493b8f4c317c672d0c08.png",
@@ -10,12 +10,12 @@
     "static/media/slick.ttf": "/medcenter/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/medcenter/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/medcenter/index.html",
-    "main.ce46158a.css.map": "/medcenter/static/css/main.ce46158a.css.map",
-    "main.ab1b4837.js.map": "/medcenter/static/js/main.ab1b4837.js.map",
+    "main.4506ca25.css.map": "/medcenter/static/css/main.4506ca25.css.map",
+    "main.397bfb6b.js.map": "/medcenter/static/js/main.397bfb6b.js.map",
     "510.ee197b32.chunk.js.map": "/medcenter/static/js/510.ee197b32.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce46158a.css",
-    "static/js/main.ab1b4837.js"
+    "static/css/main.4506ca25.css",
+    "static/js/main.397bfb6b.js"
   ]
 }
