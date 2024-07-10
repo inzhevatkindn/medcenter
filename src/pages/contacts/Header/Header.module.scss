@@ -1,0 +1,42 @@
+@import "../../../styles/variables";
+@import "../../../styles/media";
+
+.bg_container {
+  background-image: url("../../../assets/contacts_bg.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+
+  .page_title {
+    background: rgba(166, 219, 75, 0.95);
+    width: 100%;
+    padding: 24px;
+    color: #fff;
+    font-weight: 400;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    h2 {
+      margin: 0;
+      color: #fff;
+      font-size: 39px;
+      font-weight: 700;
+    }
+
+    .breadcrumbs {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        margin-right: 5px;
+    }
+  }
+}

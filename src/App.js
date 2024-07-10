@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Contact from "./pages/contacts/Contact";
 import styles from "./App.module.scss";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="about" element={<About />} />
+              <Route path="contacts" element={<Contact />} />
             </Routes>
           </div>
         </div>

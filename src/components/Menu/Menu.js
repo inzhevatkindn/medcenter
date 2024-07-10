@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Menu.module.scss";
+import MenuArrow from "../../assets/menu_arrow.svg";
 
 function Menu({ title, items }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ function Menu({ title, items }) {
   return (
     <div className={styles.dropdown}>
       <div onClick={toggleMenu} className={styles.dropdownButton}>
-        {title} <span className={styles.arrow}>&#9662;</span>
+        {title} <MenuArrow />
       </div>
       {isOpen && (
         <ul className={styles.dropdownMenu} ref={menuRef}>

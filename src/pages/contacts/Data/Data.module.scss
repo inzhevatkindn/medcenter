@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+@import "../../../styles/media";
+
+.container {
+  padding: 72px 0 96px;
+  background-color: #f9fef0;
+
+  .wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  .card {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 24px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    .title {
+        font-weight: 700;
+    }
+  }
+}

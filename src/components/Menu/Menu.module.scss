@@ -12,6 +12,8 @@
     font-weight: 400;
     text-transform: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 
     &:hover {
       text-decoration: underline;
@@ -19,6 +21,10 @@
 
     .arrow {
       margin-left: 5px;
+    }
+
+    svg {
+      margin-left: 4px;
     }
   }
 

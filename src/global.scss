@@ -17,6 +17,18 @@ a {
   &[href^="mailto:"] {
     text-decoration: none;
   }
+
+  // text-decoration: none; // Убираем стандартное подчеркивание
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: -1px; // Смещаем линию на 1 пиксель ниже
+  //   height: 1px; // Толщина линии
+  //   background-color: #1d1d1d; // Цвет линии совпадает с цветом текста
+  // }
 }
 
 .container {
@@ -51,4 +63,9 @@ a {
   right: -25px;
   width: 100px;
   height: calc(100% - 48px);
+}
+
+h2 {
+  font-size: 39px;
+  font-weight: 800;
 }

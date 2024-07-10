@@ -68,7 +68,7 @@ function Header() {
                   <a href="#">Новости</a>
                 </li>
                 <li>
-                  <a href="#">Контакты</a>
+                  <a href="/medcenter/contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
