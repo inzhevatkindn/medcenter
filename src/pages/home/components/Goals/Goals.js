@@ -28,7 +28,7 @@ const Goals = () => (
             и безопасного будущего.
           </p>
         </div>
-        <Button title="Запись на прием" isGradient />
+        <Button title="Запись на приём" isGradient />
         <ArrowIcon />
       </div>
       <div className={styles.block}>

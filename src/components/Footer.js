@@ -10,6 +10,10 @@ import VkIcon from "../assets/social/vk.svg";
 import OkIcon from "../assets/social/ok.svg";
 import YoutubeIcon from "../assets/social/youtube.svg";
 import ZenIcon from "../assets/social/zen.svg";
+import IgIcon from '../assets/social/instagram.svg';
+import TgIcon from '../assets/social/telegram.svg';
+import RutubeIcon from '../assets/social/rutube.svg';
+import TiktokIcon from '../assets/social/tik-tok.svg';
 
 function Footer() {
   return (
@@ -28,18 +32,19 @@ function Footer() {
             <div className={styles.title}>Контакты</div>
             <div className={classNames("col_flex", styles.contacts)}>
               <div className="row_flex">
-                <PhoneLogo />
-                <a href="tel:+3333333333">+ 333 (33) 333 333</a>
-              </div>
-              <div className="row_flex">
-                <AddressLogo />
+                <AddressLogo width="20" height="24" />
                 <a href="https://google.com">
                   Самарская область, город Тольятти, ...
                 </a>
               </div>
               <div className="row_flex">
-                <MailLogo />
+                <MailLogo width="22" height="18" />
                 <a href="mailto:oganikagmail.com">oganikgmail.com</a>
+              </div>
+
+              <div className="row_flex">
+                <PhoneLogo />
+                <a href="tel:+3333333333">+ 333 (33) 333 333</a>
               </div>
             </div>
           </div>
@@ -63,28 +68,28 @@ function Footer() {
             </div>
             <div className={styles.social}>
               <a href="">
-                <VkIcon />
-              </a>
-              <a href="">
-                <OkIcon />
-              </a>
-              <a href="">
                 <YoutubeIcon />
-              </a>
-              <a href="">
-                <ZenIcon />
               </a>
               <a href="">
                 <VkIcon />
               </a>
               <a href="">
-                <OkIcon />
+                <TiktokIcon />
               </a>
               <a href="">
-                <YoutubeIcon />
+                <RutubeIcon />
               </a>
               <a href="">
                 <ZenIcon />
+              </a>
+              <a href="">
+                <OkIcon />
+              </a>
+              <a href="">
+                <IgIcon />
+              </a>
+              <a href="">
+                <TgIcon />
               </a>
             </div>
           </div>

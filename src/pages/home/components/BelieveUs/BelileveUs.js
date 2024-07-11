@@ -86,7 +86,7 @@ const BelieveUs = () => (
         ))}
       </div>
       <div className="row_flex" style={{ gap: "24px", marginTop: "24px", justifyContent: 'center' }}>
-        <Button title="Запись на прием" isGradient />
+        <Button title="Запись на приём" isGradient />
         <Button title="Позвонить в центр" />
       </div>
     </div>

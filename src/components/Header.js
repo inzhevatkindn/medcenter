@@ -30,13 +30,13 @@ function Header() {
       <div className="container">
         <div className={classNames(styles.topSection, "hr_pd")}>
           <div className={styles.contactInfo}>
-            <PhoneLogo />
+            <PhoneLogo width="20" height="20" />
             <a href="tel:+3333333333">+ 333 (33) 333 333</a>
-            <AddressLogo />
+            <AddressLogo width="18.55" height="24" />
             <a href="https://google.com">
               Самарская область, город Тольятти, ...
             </a>
-            <MailLogo />
+            <MailLogo width="24" height="20" />
             <a href="mailto:oganikagmail.com">oganikgmail.com</a>
           </div>
           <div className={styles.language}>
@@ -73,7 +73,7 @@ function Header() {
               </ul>
             </nav>
             <button className={styles.appointmentButton}>
-              Запись на прием
+              Запись на приём
             </button>
           </div>
         </div>

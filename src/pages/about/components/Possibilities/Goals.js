@@ -50,7 +50,7 @@ const Possibilities = () => (
           </p>
         </div>
         <div className={styles.buttons}>
-          <Button title="Запись на прием" isGreen />
+          <Button title="Запись на приём" isGreen />
           <Button title="Звонок в центр" isDefault />
         </div>
       </div>

@@ -30,7 +30,7 @@ const Header = () => (
       </div>
       <div className={styles.note}>Мы заботимся о вашем будущем</div>
       <div className={styles.buttons}>
-        <Button title="Запись на прием" isGradient />
+        <Button title="Запись на приём" isGradient />
         <Button title="Позвонить в центр" isDefault />
       </div>
     </div>

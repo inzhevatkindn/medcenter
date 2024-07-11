@@ -26,7 +26,12 @@ function Menu({ title, items }) {
   return (
     <div className={styles.dropdown}>
       <div onClick={toggleMenu} className={styles.dropdownButton}>
-        {title} <MenuArrow />
+        {title}{" "}
+        <MenuArrow
+          width="12"
+          height="8"
+          className={isOpen ? styles.transform : ""}
+        />
       </div>
       {isOpen && (
         <ul className={styles.dropdownMenu} ref={menuRef}>

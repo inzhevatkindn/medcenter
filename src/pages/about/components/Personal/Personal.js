@@ -28,7 +28,7 @@ const Personal = () => (
         </p>
       </div>
       <div className="row_flex" style={{ gap: "24px" }}>
-        <Button isGreen title="Запись на прием" />
+        <Button isGreen title="Запись на приём" />
         <Button isDefault title="Звонок в центр" />
       </div>
     </div>
