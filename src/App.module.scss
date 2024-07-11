@@ -1,8 +1,13 @@
 @import "./styles/variables";
+@import "./styles/media";
 
 .gradient {
   // background: linear-gradient(to bottom, $off-white, #f9fef0);
   background-color: #fbfbfb;
+
+  @include mobile {
+    background-color: #fff;
+  }
 
   /* Задаем высоту и ширину */
 //   height: 100vh; /* Полная высота экрана */

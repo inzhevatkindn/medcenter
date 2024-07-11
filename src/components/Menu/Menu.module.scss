@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/media";
 
 .dropdown {
   position: relative;
@@ -15,8 +16,18 @@
     display: flex;
     align-items: center;
 
+    @include mobile {
+      font-size: 14px;
+      line-height: 14px;
+      justify-content: space-between;
+    }
+
     &:hover {
       text-decoration: underline;
+
+      @include mobile {
+        text-decoration: none;
+      }
     }
 
     .arrow {
@@ -29,18 +40,23 @@
   }
 
   .dropdownMenu {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: $white;
-    border: 1px solid $light-gray;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     list-style: none;
     flex-direction: column;
     margin: 0;
     padding: 0;
     min-width: 180px;
     z-index: 1000;
+    margin-top: 7px;
+    margin-bottom: -14px;
+
+    @include desktop {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: $white;
+      border: 1px solid $light-gray;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
     .dropdownItem {
       padding: 16px;
@@ -52,6 +68,11 @@
       width: 100%;
       box-sizing: border-box;
       text-transform: none;
+
+      @include mobile {
+        border-bottom: 0 !important;
+        color: #1d1d1d;
+      }
 
       &:hover {
         background-color: $primary-color;

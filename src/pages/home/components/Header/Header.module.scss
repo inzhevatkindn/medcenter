@@ -43,6 +43,10 @@
 
   .img_container {
     z-index: 1;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .buttons {
@@ -59,6 +63,10 @@
     right: 39px;
     width: 636px;
     height: 527px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 

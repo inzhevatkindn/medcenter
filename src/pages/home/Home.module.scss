@@ -1,3 +1,9 @@
+@import "../../styles/media";
+
 .home {
   padding: 78px 0 0;
+
+  @include mobile {
+    padding: 12px 0 0;
+  }
 }
