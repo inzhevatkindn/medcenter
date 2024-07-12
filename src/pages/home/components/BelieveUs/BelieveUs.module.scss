@@ -1,7 +1,8 @@
 @import "../../../../styles/variables";
+@import "../../../../styles/media";
 
 .container {
-  padding-bottom: 94px;
+  padding: 64px 0;
 
   .divider {
     height: 6px;
@@ -16,6 +17,13 @@
     line-height: 42px;
     font-weight: 800;
     margin-bottom: 24px;
+
+    @include mobile {
+      margin: 0;
+      font-size: 26px;
+      line-height: 34px;
+      text-align: start;
+    }
   }
 
   .about {
@@ -26,6 +34,13 @@
     text-align: center;
     color: $darker-gray;
     padding: 0 200px;
+
+    @include mobile {
+      padding: 0;
+      margin-top: 14px;
+      margin-bottom: 24px;
+      text-align: start;
+    }
   }
 
   .grid {
@@ -44,11 +59,22 @@
       background-color: #fff;
       box-sizing: border-box;
 
+      @include mobile {
+        flex-basis: auto;
+        padding: 14px;
+      }
+
       .title {
         margin: 20px 0 16px;
         font-size: 20px;
         font-weight: 600;
         line-height: 20px;
+
+        @include mobile {
+          font-size: 16px;
+          line-height: 16px;
+          margin: 14px 0;
+        }
       }
 
       .description {
@@ -56,7 +82,19 @@
         font-size: 16px;
         line-height: 35px;
         color: $darker-gray;
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 22px;
+        }
       }
+    }
+  }
+
+  .mobile_grid > div {
+    @include mobile {
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 }

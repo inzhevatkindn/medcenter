@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 import ruLogo from "../assets/ru.png";
 import enLogo from "../assets/en.png";
@@ -27,14 +27,14 @@ const specialistMenuItems = [
 ];
 
 const MobileMenu = ({ onClose }) => (
-  <div className={styles.mobile_overlay}>
+  <div className={styles.mobile_overlay} id="mobile_menu">
     <div className={styles.mobile_menu}>
       <div className={styles.mobile_header}>
         <div className={styles.logo}>
           <Logo />
           Онкоцентр <br /> доктора Марченко
         </div>
-        <div className={styles.close_button} onClick={onClose}>
+        <div className={styles.close_button} onClick={onClose} id="closeMenu">
           <div className={styles.cross} />
         </div>
       </div>
@@ -76,7 +76,28 @@ function Header() {
 
   const toggleClick = useCallback(() => setOpen(true), []);
 
-  const onClose = useCallback(() => setOpen(false), []);
+  const onClose = useCallback(() => {
+    document.body.classList.remove("no-scroll");
+    setOpen(false);
+  }, []);
+
+  useEffect(() => {
+    const hamburger = document.getElementById("hamburger");
+
+    const handleHamburgerClick = () => {
+      document.body.classList.toggle("no-scroll");
+    };
+
+    if (hamburger) {
+      hamburger.addEventListener("click", handleHamburgerClick);
+    }
+
+    return () => {
+      if (hamburger) {
+        hamburger.removeEventListener("click", handleHamburgerClick);
+      }
+    };
+  }, []);
 
   return (
     <header className={styles.header}>
@@ -96,7 +117,11 @@ function Header() {
                   <PhoneLogo width="16" height="16" />
                   <a href="tel:+3333333333">+ 333 (33) 333 333</a>
                 </div>
-                <div className={styles.hamburger} onClick={toggleClick}>
+                <div
+                  className={styles.hamburger}
+                  onClick={toggleClick}
+                  id="hamburger"
+                >
                   <div className={styles.line} />
                   <div className={styles.line} />
                   <div className={styles.line} />

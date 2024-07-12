@@ -7,6 +7,12 @@
   gap: 24px;
   position: relative;
 
+  @include mobile {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 14px;
+  }
+
   .left_side {
     display: flex;
     flex-direction: column;
@@ -15,18 +21,34 @@
       font-size: 39px;
       margin-bottom: 14px;
       font-weight: 800;
+
+      @include mobile {
+        font-size: 26px;
+        margin-top: 30px;
+        line-height: 31px;
+      }
     }
 
     p {
       font-size: 16px;
       font-weight: 300;
       margin-top: 0;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
 
     .img_container {
       display: flex;
       justify-content: space-between;
       margin-top: auto;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 14px;
+      }
     }
   }
 

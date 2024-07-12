@@ -1,14 +1,7 @@
 import Button from "../../../../components/Button/Button";
 import MarkedList from "../../../../components/MarkedList/MarkedList";
+import { useWindowSize } from "../../../../utils/useWindowSize";
 import styles from "./Goals.module.scss";
-
-// const items = [
-//   "Выполнение 	клинических исследований для улучшения диагностики и терапии онкологических 	заболеваний.",
-//   "Проведение 	фундаментальных и прикладных исследований, 	направленных на углубление знаний в 	онкологии и разработку новых методов 	лечения.",
-//   "Вклад 	в развитие здравоохранения и медицинской	науки на национальном и международном 	уровнях.",
-//   "Сохранение	и укрепление здоровья наших пациентов 	через внедрение инновационных медицинских технологий и подходов.",
-//   "Подготовка 	и повышение квалификации высококлассных 	специалистов в области медицины и 	научных исследований.",
-// ];
 
 const items = [
   <>
@@ -35,30 +28,43 @@ const items = [
   </>,
 ];
 
-const Possibilities = () => (
-  <div className="hr_pd">
-    <div className={styles.container}>
-      <div className={styles.block} style={{ paddingRight: "20px" }}>
-        <h2>Наши уникальные возможности:</h2>
-        <div>
-          <p>
-            Онкоцентр имени Марченко стремится не только к оказанию
-            высококачественной медицинской помощи, но и к развитию
-            здравоохранения и медицинской науки в России. Мы гордимся нашими
-            достижениями и продолжаем работать над улучшением качества жизни
-            наших пациентов.
-          </p>
+const Possibilities = () => {
+  const { isMobile } = useWindowSize();
+  return (
+    <div className="hr_pd">
+      <div className={styles.container}>
+        <div className={styles.block} style={{ paddingRight: "20px" }}>
+          <h2>Наши уникальные возможности:</h2>
+          <div>
+            <p>
+              Онкоцентр имени Марченко стремится не только к оказанию
+              высококачественной медицинской помощи, но и к развитию
+              здравоохранения и медицинской науки в России. Мы гордимся нашими
+              достижениями и продолжаем работать над улучшением качества жизни
+              наших пациентов.
+            </p>
+          </div>
+          {!isMobile && (
+            <div className={styles.buttons}>
+              <Button title="Запись на приём" isGreen />
+              <Button title="Звонок в центр" isDefault />
+            </div>
+          )}
         </div>
-        <div className={styles.buttons}>
-          <Button title="Запись на приём" isGreen />
-          <Button title="Звонок в центр" isDefault />
+        <div className={styles.block}>
+          <MarkedList items={items} />
         </div>
-      </div>
-      <div className={styles.block}>
-        <MarkedList items={items} />
+        {isMobile && (
+          <div className={styles.block}>
+            <div className={styles.buttons}>
+              <Button title="Запись на приём" isGreen />
+              <Button title="Звонок в центр" isDefault />
+            </div>
+          </div>
+        )}
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Possibilities;

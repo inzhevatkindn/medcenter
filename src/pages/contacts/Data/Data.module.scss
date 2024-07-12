@@ -5,9 +5,20 @@
   padding: 72px 0 96px;
   background-color: #f9fef0;
 
+  h2 {
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
   .wrapper {
     display: flex;
     gap: 24px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   .card {

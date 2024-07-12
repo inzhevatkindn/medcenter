@@ -1,65 +1,98 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/media";
+
 .serviceList {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+
+  @include mobile {
+    gap: 14px;
   }
-  
-  .serviceItem {
-    flex: 1 1 calc(50% - 48px);
-    border-radius: 12px;
-    padding: 20px;
-    background-color: #fff;
-  
-    &:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  }
-  
-  .serviceHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .serviceIcon {
-    font-size: 24px;
+}
+
+.serviceItem {
+  flex: 1 1 calc(50% - 48px);
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+
+  @include mobile {
+    padding: 14px;
   }
 
-  .info {
-    display: flex;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.serviceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+}
+
+.serviceIcon {
+  font-size: 24px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceTitle {
+  flex-grow: 1;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+
+  @include mobile {
+    font-size: 20px;
+    margin: 14px 0 10px;
+  }
+}
+
+.serviceLink {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.serviceDescription {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.container {
+  display: flex;
+  gap: 24px;
+
+  @include mobile {
     flex-direction: column;
   }
-  
-  .serviceTitle {
-    flex-grow: 1;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 600;
-  }
-  
-  .serviceLink {
-    // color: #007bff;
-    text-decoration: underline;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .serviceDescription {
-    margin-top: 8px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-.container {
-    display: flex;
-    gap: 24px;
-    // justify;
 }
 
 .wrapper {
-    margin-top: 64px;
-    margin-bottom: 32px;
+  margin-top: 64px;
+  margin-bottom: 32px;
+
+  h2 {
+    @include mobile {
+      line-height: 36px;
+    }
+  }
 }

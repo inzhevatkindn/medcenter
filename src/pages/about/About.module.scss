@@ -1,3 +1,9 @@
+@import "../../styles/media";
+
 .about_wrapper {
     padding-top: 64px;
+
+    @include mobile {
+        padding: 0;
+    }
 }

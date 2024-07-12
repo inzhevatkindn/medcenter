@@ -6,16 +6,16 @@ import "slick-carousel/slick/slick-theme.css";
 import NextArrowIcon from "../../assets/next_arrow.svg";
 import PrevArrowIcon from "../../assets/prev_arrow.svg";
 import classNames from "classnames";
+import { useWindowSize } from "../../utils/useWindowSize";
 
 const NewsSlider = () => {
+  const { isMobile } = useWindowSize();
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: 3,
-    // variableWidth: true,
-    // centerMode: true, // Включите центральный режим для равного расстояния
+    slidesToShow: 1,
     centerPadding: "0",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,

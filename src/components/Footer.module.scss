@@ -81,6 +81,10 @@
     flex-direction: column;
     gap: 24px;
 
+    @include mobile {
+      width: 100%;
+    }
+
     div {
       font-size: 16px;
       white-space: nowrap;
@@ -93,6 +97,10 @@
     gap: 16px; /* Расстояние между элементами */
     justify-content: space-between; /* Равномерное распределение элементов по ширине контейнера */
     width: 80px;
+
+    @include mobile {
+      width: 264px;
+    }
 
     a {
       display: flex;
@@ -107,11 +115,29 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
       flex: 1 1 calc(50% - 32px); /* Ширина каждого элемента с учетом gap */
+
+      @include mobile {
+        height: 54px;
+        flex: 1 1 calc(25% - 16px);
+        width: 54px;
+      }
     }
   }
 }
 
 .gap50 {
-  gap: 55px;
+  gap: 48px;
   align-items: flex-start !important;
+
+  @include mobile {
+    flex-direction: column !important;
+  }
+}
+
+.copyright {
+  @include mobile {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

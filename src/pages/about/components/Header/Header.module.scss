@@ -11,6 +11,14 @@
   display: flex;
   align-items: flex-end;
 
+  @include mobile {
+    background-image: url("../../../../assets/about_header_mobile.png");
+    height: 300px;
+    width: calc(100% + 28px);
+    margin-left: -14px;
+    border-radius: 0;
+  }
+
   .page_title {
     background: rgba(166, 219, 75, 0.95);
     width: 100%;
@@ -20,6 +28,10 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 
+    @include mobile {
+      display: none;
+    }
+
     h2 {
       margin: 0;
       color: #fff;
@@ -28,15 +40,15 @@
     }
 
     .breadcrumbs {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
 
     a {
-        font-size: 16px;
-        color: #fff;
-        font-weight: 400;
-        margin-right: 5px;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 400;
+      margin-right: 5px;
     }
   }
 }

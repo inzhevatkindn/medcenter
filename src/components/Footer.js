@@ -10,12 +10,14 @@ import VkIcon from "../assets/social/vk.svg";
 import OkIcon from "../assets/social/ok.svg";
 import YoutubeIcon from "../assets/social/youtube.svg";
 import ZenIcon from "../assets/social/zen.svg";
-import IgIcon from '../assets/social/instagram.svg';
-import TgIcon from '../assets/social/telegram.svg';
-import RutubeIcon from '../assets/social/rutube.svg';
-import TiktokIcon from '../assets/social/tik-tok.svg';
+import IgIcon from "../assets/social/instagram.svg";
+import TgIcon from "../assets/social/telegram.svg";
+import RutubeIcon from "../assets/social/rutube.svg";
+import TiktokIcon from "../assets/social/tik-tok.svg";
+import { useWindowSize } from "../utils/useWindowSize";
 
 function Footer() {
+  const { isMobile } = useWindowSize();
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -24,9 +26,11 @@ function Footer() {
             <div className={styles.logo}>
               <Logo isRevert /> ОНКОЦЕНТР <br /> ДОКТОРА МАРЧЕНКО
             </div>
-            <div className={styles.copyright}>
-              Copyright © 2024 «Онкоцентр имени Марченко» All rights reserved.
-            </div>
+            {!isMobile && (
+              <div className={styles.copyright}>
+                Copyright © 2024 «Онкоцентр имени Марченко» All rights reserved.
+              </div>
+            )}
           </div>
           <div>
             <div className={styles.title}>Контакты</div>
@@ -60,11 +64,15 @@ function Footer() {
           </div>
           <div
             className="row_flex"
-            style={{ gap: "22px", alignItems: "start" }}
+            style={
+              isMobile
+                ? { flexDirection: "column", width: "100%", gap: "48px" }
+                : { gap: "22px", alignItems: "start" }
+            }
           >
             <div className={styles.buttons}>
               <Button isBlack title="Личный кабинет" />
-              <Button isBlack title="Записаться" />
+              <Button isBlack title="Запись на приём" />
             </div>
             <div className={styles.social}>
               <a href="">
@@ -92,6 +100,9 @@ function Footer() {
                 <TgIcon />
               </a>
             </div>
+          </div>
+          <div className={styles.copyright}>
+            Copyright © 2024 «Онкоцентр имени Марченко» All rights reserved.
           </div>
         </div>
       </div>

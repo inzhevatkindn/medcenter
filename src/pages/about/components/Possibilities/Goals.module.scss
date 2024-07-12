@@ -5,9 +5,15 @@
   padding: 94px 0;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    padding: 64px 0;
+  }
+
   .block {
     flex: 1;
     position: relative;
+    flex-direction: column;
 
     h2 {
       margin-bottom: 24px;
@@ -15,6 +21,12 @@
       font-weight: 800;
       line-height: 42px;
       margin-top: 0;
+
+      @include mobile {
+        margin-bottom: 14px;
+        font-size: 26px;
+        line-height: 34px;
+      }
     }
 
     p {
@@ -23,6 +35,11 @@
       font-weight: 300;
       margin-top: 0;
       margin-bottom: 14px;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
 
     svg {
@@ -35,6 +52,10 @@
       display: flex;
       gap: 24px;
       margin-top: 32px;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
   }
 
@@ -48,4 +69,10 @@
   line-height: 24px;
   font-weight: 600;
   margin-bottom: 14px;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 12px;
+  }
 }

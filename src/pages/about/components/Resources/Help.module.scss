@@ -1,3 +1,6 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/media";
+
 .wrapper {
   padding: 64px 0;
   display: flex;
@@ -7,10 +10,28 @@
   border-radius: 24px;
   align-items: center;
 
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+
   .title {
     font-size: 32px;
     line-height: 40px;
     font-weight: 800;
+
+    @include mobile {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+  .description {
+    color: $dark-gray;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   .right_side {
@@ -19,8 +40,30 @@
     justify-content: center;
     position: relative;
 
+    @include mobile {
+      width: 100%;
+    }
+
     img {
       z-index: 2;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  .btn_container {
+    @include mobile {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    > div {
+      @include mobile {
+        width: 100%;
+        box-sizing: border-box;
+      }
     }
   }
 }

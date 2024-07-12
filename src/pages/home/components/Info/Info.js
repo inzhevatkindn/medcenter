@@ -1,12 +1,17 @@
+import classNames from "classnames";
 import styles from "./Info.module.scss";
 import FirstIcon from "../../../../assets/info/1.svg";
 import SecondIcon from "../../../../assets/info/2.svg";
 import ThirdIcon from "../../../../assets/info/3.svg";
 import FourIcon from "../../../../assets/info/4.svg";
+import { useWindowSize } from "../../../../utils/useWindowSize";
 
-const Card = ({ IconComponent, title, description }) => (
+const Card = ({ IconComponent, title, description, isMobile }) => (
   <div className={styles.info}>
-    <IconComponent />
+    <IconComponent
+      width={isMobile ? "48" : "86"}
+      height={isMobile ? "48" : "86"}
+    />
     <div className={styles.title}>{title}</div>
     <div className={styles.description}>{description}</div>
   </div>
@@ -38,28 +43,17 @@ const data = [
   },
 ];
 
-const Info = () => (
-  <div className="hr_pd" style={{ position: "relative" }}>
-    <div
-      className="row_flex"
-      style={{
-        justifyContent: "space-between",
-        position: "absolute",
-        width: "calc(100% - 128px)",
-        backgroundColor: "#fff",
-        boxShadow: "0px 42px 32px -14px #639C021A",
-        padding: "34px",
-        boxSizing: "border-box",
-        borderRadius: "24px",
-        gap: '30px',
-        top: '-180px'
-      }}
-    >
-      {data.map((item) => (
-        <Card {...item} />
-      ))}
+const Info = () => {
+  const { isMobile } = useWindowSize();
+  return (
+    <div className="hr_pd" style={isMobile ? {} : { position: "relative" }}>
+      <div className={classNames("row_flex", styles.wrapper)}>
+        {data.map((item) => (
+          <Card {...item} isMobile={isMobile} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Info;
